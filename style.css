@@ -1,15 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
+
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #12da33;
     padding: 1rem 0;
     text-align: center;
+    width: 100%;
+    height: auto;
+    animation: zoomInOut 10s infinite;
+    position: flex;
 }
 
 nav ul {
@@ -23,81 +28,186 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f70a0a;
+    color: #000000;
     text-decoration: none;
-
+    font-family: Arial;
+    font-size: 5;
+    font-weight: bold;
+    word-spacing: 50;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    animation: zoomInOut 10s infinite;
 }
 
-main {
+ul li a:hover{
+    color: orangered;
+}
+
+.search{
+    width: 300px;
+    height: 30px;
+    float: left;
+    margin-left: -50px;
+    margin-top: -35px;
+    
+    
+    
+}
+.srch{
+    font-family: Arial;
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid orangered;
+    margin-top: -10px;
+    margin-left: 40px;
+    box-shadow: 0 0 10px rgba(18, 228, 36, 0.9);
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: orangered;
+    border: 2px solid orangered;
+}
+
+
+ main {
     padding: 2rem;
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5 )50%, rgba(0,0,0,0.5 )50%), url(web.jpg);
+   background: linear-gradient(to top, rgba(0,0,0,0.5 )50%, rgba(0,0,0,0.5 )50%), url(2.jpg);
     background-position: center;
     background-size: cover;
     height: 109vh;
+
 }
 
-section {
+section{
     margin-bottom: 2rem;
-    color: #fff;
-}
-#top-stories {
-    background-color: #03f196;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(8, 0, 0, 0.1);
-}
-
-#top-stories h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: greenyellow;
-    font-size: 35px;
+    color: #ffffff;
+    font-size: 20px;
     font-family: Arial;
-    padding-left: 10px;
-    float: center;
-    padding-top: 20px;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+    position: relative;
+    line-height: 50px;
 }
 
-.story {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-}
-
-.story img {
-    width: 750px;
-    height: 500px;
-    object-fit: cover;
-    margin-right: 1rem;
+/* carbon calc starts here*/
+.container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    position: absolute;
+    color: #ffffff;
+    background: linear-gradient(to top rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
     border-radius: 8px;
-    background: linear-gradient(to top, rgba(15, 0, 0, 0.5)50%, rgba(0,0,0,0.5 )50%), url(web.jpg);
+    box-shadow: 0 0 10px rgba(18, 228, 36, 0.9);
+    top: 150px;
+    right: 210px;
+}
+
+h1 b{
+    text-align: center;
+    color: #000000;
+    animation: zoomInOut 10s infinite;
+
+}
+
+h1 {
+    text-align: center;
+    color: #24fa0c;
+    animation: zoomInOut 10s infinite;
 }
 
 
-.story h3 {
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #21ee06;
+}
+/*carbon calc ends here*/
+/*NEWS PAGE STARTS HERE*/
+#news-form {
+    margin-top: 2em;
+}
+
+#news-form label {
+    display: center;
+    margin-top: 1em;
+}
+
+#news-form input, #news-form textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+#news-form button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+.news-article {
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+.news-article h3 {
     margin: 0;
+    color: #333;
 }
 
-.story h3 a {
-    text-decoration: none;
-    color: #030000;
+.news-article p {
+    margin-top: 0.5em;
 }
 
-.story h3 a:hover {
-    text-decoration: underline;
-}
-
-.story p {
-    margin: 0.5rem 0 0;
-    float: inline-end;
-}
-
+/*NEWS PAGE ENDS HERE*/
 footer {
     background-color: #083102;
     color: #fff;
-    text-align: center;
+    text-align: center; 
     padding: 1rem 0;
     position: fixed;
     width: 100%;
